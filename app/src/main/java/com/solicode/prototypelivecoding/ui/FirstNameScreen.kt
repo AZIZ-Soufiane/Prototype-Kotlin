@@ -40,7 +40,7 @@ fun FirstNameScreen(){
             TextField(
                 value = text,
                 onValueChange = {text = it},
-                label = {Text ("Enter first name")},
+                label = {Text ("Enter your name")},
                 modifier = Modifier.weight(1f)
             )
             Button(onClick = {
