@@ -35,6 +35,7 @@ fun FirstNameScreen(){
         Row(
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         )
+
         {
             TextField(
                 value = text,
