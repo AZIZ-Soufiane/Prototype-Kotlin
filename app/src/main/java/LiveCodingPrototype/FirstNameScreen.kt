@@ -44,8 +44,9 @@ fun FirstNameScreen(){
                 modifier = Modifier.weight(1f)
             )
             Button(onClick = {
-                if(text.isNotBlank()) {
-                    Persons.add(Person(text))
+                val CleanedSpace = text.trim().replaceFirstChar { it.uppercase() }
+                if(CleanedSpace.isNotBlank()) {
+                    Persons.add(Person(CleanedSpace))
                     text = ""
                 }
             })
