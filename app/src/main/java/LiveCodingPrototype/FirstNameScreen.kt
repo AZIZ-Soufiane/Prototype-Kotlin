@@ -1,4 +1,4 @@
-package com.solicode.prototypelivecoding.ui
+package LiveCodingPrototype
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -17,6 +17,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import LiveCodingPrototype.Person
 
 //list
 val Persons = mutableStateListOf<Person>()
@@ -35,7 +36,6 @@ fun FirstNameScreen(){
         Row(
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         )
-
         {
             TextField(
                 value = text,
@@ -48,7 +48,8 @@ fun FirstNameScreen(){
                     Persons.add(Person(text))
                     text = ""
                 }
-            }) {
+            })
+            {
                 Text("Add")
             }
         }
