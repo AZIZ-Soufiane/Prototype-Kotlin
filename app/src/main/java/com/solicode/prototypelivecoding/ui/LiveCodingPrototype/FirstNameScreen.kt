@@ -1,4 +1,4 @@
-package LiveCodingPrototype
+package com.solicode.prototypelivecoding.ui.LiveCodingPrototype
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -17,7 +17,6 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import LiveCodingPrototype.Person
 
 //list
 val Persons = mutableStateListOf<Person>()
